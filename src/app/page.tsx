@@ -28,18 +28,18 @@ export default function Home() {
       <h1 className={styles.pageTitle}>Krystof Matejka</h1>
       <h2 className={styles.pageSubtitle}>Site reliability engineer in the streets, data analyst in the sheets</h2>
       <Post
-        title='Zelení - Pardubice z opozice'
-        tags={['czech', 'talk', 'green party', 'environment', 'local politics', '2023']}
-        youtube='https://www.youtube.com/embed/npMphHuY1NY'
+        title='Betsys - devops vs sre'
+        tags={['czech', 'podcast', 'devops', 'sre', '2023']}
+        youtube='https://www.youtube.com/embed/ShBAmqwEYNw'
       />
       <Post
         title='Outreach - scallable front-ends'
         tags={['english', 'presentation', 'front-end', 'monitoring', '2023']}
       />
       <Post
-        title='Betsys - devops vs sre'
-        tags={['czech', 'podcast', 'devops', 'sre', '2023']}
-        youtube='https://www.youtube.com/embed/ShBAmqwEYNw'
+        title='Zelení - Pardubice z opozice'
+        tags={['czech', 'talk', 'green party', 'environment', 'local politics', '2023']}
+        youtube='https://www.youtube.com/embed/npMphHuY1NY'
       />
       </div>
     </main>
