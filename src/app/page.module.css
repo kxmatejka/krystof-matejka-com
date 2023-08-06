@@ -8,12 +8,13 @@
 
 .pageTitle {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin: 20px 0;
   font-weight: normal;
 }
 
 .pageSubtitle {
   font-size: 1.2rem;
+  margin-bottom: 70px;
   font-weight: normal;
 }
 
@@ -23,7 +24,6 @@
 }
 
 .postBody {
-  margin-top: 70px;
   margin-bottom: 70px;
 }
 
