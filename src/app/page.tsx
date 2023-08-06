@@ -5,9 +5,13 @@ type PostProps = {
   title: string
   tags: string[]
   youtube?: string
+  attachment?: {
+    image: string
+    content: string
+  }
 }
 
-function Post({title, tags, youtube}: PostProps) {
+function Post({title, tags, youtube, attachment}: PostProps) {
   return (
     <div className={styles.postBody}>
       <h3 className={styles.postTitle}>{title}</h3>
@@ -17,6 +21,13 @@ function Post({title, tags, youtube}: PostProps) {
       {youtube && (
         <iframe width="100%" height="315" src={youtube} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
       )}
+      {
+        attachment && (
+          <a href={attachment.content} target='_blank'>
+            <img src={attachment.image} alt='x' width='100%'/>
+          </a>
+        )
+      }
     </div>
   )
 }
@@ -33,8 +44,12 @@ export default function Home() {
         youtube='https://www.youtube.com/embed/ShBAmqwEYNw'
       />
       <Post
-        title='Outreach - scallable front-ends'
+        title='Outreach - scallable front-end'
         tags={['english', 'presentation', 'front-end', 'monitoring', '2023']}
+        attachment={{
+          image: '/images/2023-front-end-monitoring.webp',
+          content: '/slides/2023-front-end-monitoring.pdf',
+        }}
       />
       <Post
         title='Zelení - Pardubice z opozice'

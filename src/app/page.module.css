@@ -7,6 +7,10 @@
   text-transform: lowercase;
 }
 
+.main > div {
+  width: 640px;
+}
+
 .pageTitle {
   font-size: 2rem;
   margin-bottom: 20px;
